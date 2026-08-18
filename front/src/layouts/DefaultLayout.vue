@@ -25,20 +25,31 @@
         </section>
     </header>
     
- <RouterView />
+    <RouterView />
+    <footer>
+        <div>
+            <div class="logo"><p>M</p></div>
+                <div class="titre">
+                <p>Mi n'dè</p>
+            </div>
+            <p></p>
+        </div>
+        <table></table>
+    </footer>
 </template>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 header {
-    position: static;
+    position: fixed;
     display: flex;
     width: 100%;
     background-color: #171321;
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    z-index: 1;
     
     
 }
@@ -124,5 +135,7 @@ align-items: center;
   font-weight:600;            
 }
 
-
+footer{
+    background-color:#171321 ;
+}
 </style>
