@@ -104,6 +104,7 @@ main{
     display: flex;
     align-items: center;
     justify-content:space-between;
+    padding-bottom: 90px;
 }
 .img-part1{
     box-shadow: 0 0 15px  #5a21b636;
@@ -311,8 +312,6 @@ main{
     background-size: cover;
     background-position: center;
     height: 200px;
-}
-.cadre-mythologie:hover{
     box-shadow: 0 16px 40px rgba(245,158,11,0.15);
     border: 1.5px solid #F59E0B;
 }
@@ -349,6 +348,9 @@ main{
     font-weight: 600;
     font-size: 16px;
 }
+.cadre-mythologie button:hover{
+    background-color: #c7830e;
+}
 .tire-genre{
     margin-top: 100px;
     margin-left: 30px;
@@ -365,6 +367,8 @@ main{
 .group-genre{
     display: flex;
     gap: 15px;
+    margin: 0px;
+    padding: 0px;
 }
 .genre{
     border: none;
@@ -376,5 +380,11 @@ main{
     color: #1F2937;
     font-weight: 500;
     font-size: 14px;
+    margin: 0px;
+}
+.genre:hover{
+    color: #5B21B6;
+    border:1px #5B21B6 solid;
+    margin: 0px;
 }
 </style>

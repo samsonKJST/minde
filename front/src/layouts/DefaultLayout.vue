@@ -27,15 +27,48 @@
     
     <RouterView />
     <footer>
-        <div>
-            <div class="logo"><p>M</p></div>
-                <div class="titre">
-                <p>Mi n'dè</p>
+        <section>
+            <div class="logo-desc">
+                <div>
+                    <div class="logo">
+                        <p>M</p>
+                    </div>
+                    <div class="titre">
+                        <p>Mi n'dè</p>
+                    </div>
+                </div>
+                <p>Plateforme de partage d'histoires et de découverte de mythologies.</p>
             </div>
-            <p></p>
-        </div>
-        <table></table>
+            <div>
+                <h4 class="title-footer">Plateforme</h4>
+                <ul>
+                    <li><button>Acceuil</button></li>
+                    <li> <button>histoire</button></li>
+                    <li><button>mythologie</button></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="title-footer">Compte</h4>
+                <ul>
+                    <li><button>Connexion</button></li>
+                    <li><button>Inscription</button></li>
+                    <li><button>Mon Profil</button></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="title-footer">Genre</h4>
+                <ul>
+                    <li><button>Horreur</button></li>
+                    <li><button>Romance</button></li>
+                    <li><button>Thriller</button></li>
+                    <li><button>Drame</button></li>
+                </ul>
+            </div>
+        </section>
+        <div class="trait-footer"> </div>
+        <span class="copirit">© 2026 Mi n'dè. Tous droits réservés.</span>
     </footer>
+    
 </template>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900&display=swap');
@@ -136,6 +169,69 @@ align-items: center;
 }
 
 footer{
-    background-color:#171321 ;
+    background-color:#171321;
+    height: 350px;
+    padding: 0px;
+    margin: 0px;
+    
 }
+footer>section{
+    display: flex;
+    gap: 150px;
+    padding-left: 20px;
+    padding-top: 50px;
+    height: 70%;
+}
+.logo-desc{
+    width: 20%;
+}
+.logo-desc > p:first-of-type {
+    color:rgba(255, 255, 255, 0.404);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Outfit','sans-serif';
+    
+}
+.logo-desc div:first-of-type{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.title-footer{
+    font-family: 'Outfit','sans-serif';
+    font-weight: 600;
+    font-size: 12;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.6px;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+footer button{
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Outfit','sans-serif';
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.404);
+    line-height: 3;
+}
+.trait-footer{
+    height: 0.5px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px;
+    background-color: rgba(80, 74, 74, 0.404);
+}
+.copirit{
+    font-family: 'Outfit','sans-serif';
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.253);
+    margin-left: 20px;
+
+}
+
 </style>
